@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	  	<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="My Personal Page">
+	  	<meta name="author" content="Thiago N. Ferreira">
+		<title>Preference Based Multi-Objective Algorithms Applied to the Variability Testing of Software Product Lines | Supporting Pages | Thiago N. Ferreira</title>
+	  	<link rel="stylesheet" href="css/bootstrap.min.css">
+		<style type="text/css">
+			.purple{
+				color: #446CB3;
+			}
+
+			.sub-nav > li > a {
+				position: relative;
+				display: block;
+				padding: 5px 5px;
+				padding-left: 40px;
+			}
+
+			.sub-nav a:hover {
+				text-decoration: none;
+				background-color: #EEE;
+			}
+
+			#table-of-contents a{
+				color: #777;
+				font-size: 13px;
+			}
+
+			#table-of-contents ul li.active a{
+				color: #446CB3;
+				font-weight: 700;
+				border-left: 2px solid #446CB3;
+			}
+
+			.references{
+				margin-top: 10px;
+				font-size: 12px;
+			}
+
+			.orange{
+				color: #F79646;
+			}
+		</style>
+	</head>
+	<body data-spy="scroll" data-target="#table-of-contents">
+		<div class="container">
+			<br/>
+			<p class="orange" id="title"><strong>Suppoting page for</strong></p>
+			<div>
+				<h2 class="purple" >Preference Based Multi-Objective Algorithms Applied to the Variability Testing of Software Product Lines</h2>
+				<p><strong>Helson Luiz Jakubovski Filho, Thiago Nascimento Ferreira and Silvia Regina Vergilio</strong>
+					<br>DInf - Federal University of Paraná, CP: 19097, CEP: 81.531-980, Curitiba, Brazil
+				</p>
+			</div>
+			<br/>
+			<div class="row">
+				<div class="col-md-9">
+					<p class="text-justify" id="abstract" ><strong>Abstract:</strong>
+							
+						Evolutionary Multi-Objective Algorithms (EMOAs) have been applied to derive products for the variability testing of Software Product Lines (SPLs), which is a complex task impacted by many factors, such as the number of products to be tested, coverage criteria, and efficacy to reveal faults. But such algorithms generally produce a lot of solutions that are uninteresting to the tester. This happens because traditional search algorithms do not take into consideration the user preferences. To ease the selection of the best solutions and avoid effort generating uninteresting solutions, this work introduces an approach that applies Preference-Based Evolutionary Multi-objective Algorithms (PEMOAs) to solve the problem. The approach is multi-objective, working with the number of products to be tested, pairwise coverage and mutation score. It incorporates the preferences before the evolution process and uses the Reference Point (RP) method. Two PEMOAs are evaluated: R-NSGA-II and r-NSGA-II, using two different formulations of objectives, and three kinds of RPs. PEMOAs outperform the traditional NSGA-II by generating a greater number of solutions in the Region of Interest (ROI) associated to the RPs. The use of PEMOAs can reduce the tester's burden in the task of selecting a better and reduced set of products for SPL testing.
+					
+					
+					</p>
+
+
+					<h3 id="instances" class="purple">Instances</h3>
+
+					<p>It was used six FMs:</p>
+					<ul> 
+						<li> <b>James:</b> SPL for collaborative web systems; [1]</li>
+						<li> <b>CAS (Car Audio System)):</b> to manage automotive sound systems; [2]</li>
+						<li> <b>WS (Weather Station):</b> SPL for weather forecast systems; [3]</li>
+						<li> <b>E-Shop:</b> an E-commerce SPL;  [4]</li>
+						<li> <b>Drupal:</b> a modular open source web content management framework; [5]</li>
+						<li> <b>SmartHome v2.2:</b> SPL for a smart residential solution. [6]</li>
+					</ul>
+
+					<p>The following table shows information about each FM, such as number of products (n<sub>t</sub>), number of used products n, active mutants (AM), valid pairs (VP), and number of features (Features).</p>
+
+					
+
+
+
+					<div class="table-responsive">
+					<table class="table">
+
+							<thead>
+						<tr>
+    <th>FM</th>
+    <th>n<sub>t</sub></th>
+    <th>n</th>
+    <th>AM</th>
+    <th>P</th>
+    <th>Features</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td><a href="instances/james.zip" target="_blank">James</a></td>
+    <td>68</td>
+    <td>68</td>
+    <td>106</td>
+    <td>75</td>
+    <td>14</td>
+  </tr>
+  <tr>
+    <td><a href="instances/cas.zip" target="_blank">CAS</a></td>
+    <td>450</td>
+    <td>450</td>
+    <td>227</td>
+    <td>183</td>
+    <td>21</td>
+  </tr>
+  <tr>
+    <td><a href="instances/ws.zip" target="_blank">WS</a></td>
+    <td>504</td>
+    <td>504</td>
+    <td>357</td>
+    <td>195</td>
+    <td>22</td>
+  </tr>
+  <tr>
+    <td><a href="instances/e-shop.zip" target="_blank">E-Shop</a></td>
+    <td>1152</td>
+    <td>1152</td>
+    <td>94</td>
+    <td>202</td>
+    <td>22</td>
+  </tr>
+  <tr>
+    <td><a href="instances/drupal.zip" target="_blank">Drupal</a></td>
+    <td>&asymp;2.09E9</td>
+    <td>11k</td>
+    <td>2194</td>
+    <td>1081</td>
+    <td>48</td>
+  </tr>
+  <tr>
+    <td><a href="instances/smarthome.zip" target="_blank">SmartHome</a></td>
+    <td>&asymp;3.87E9</td>
+    <td>11k</td>
+    <td>2948</td>
+    <td>1710</td>
+    <td>60</td>
+  </tr>
+</tbody>
+
+
+					</table>
+					</div>
+
+					<p class="text-justify">Click on the instance name for downloading them.</p>
+
+
+
+					
+
+
+
+
+
+
+					<h3 id="rps" class="purple">Reference Points</h3>
+
+					<p class="text-justify">The following table shows the RPs used in both experiments.</p>
+
+
+					<div class="table-responsive">
+					<table class="table">
+						<thead>
+							<tr>
+								<th>Formulation</th>
+								<th>FM</th>
+								<th>Feasible</th>
+								<th>Infeasible</th>
+								<th>True</th>
+					  	</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td rowspan="6">2-Objectives</td>
+								<td>James</td>
+								<td>(6; 95%) </td>
+								<td>(2; 98%) </td>
+								<td>(5; 97%)</td>
+							</tr>
+							<tr>
+								<td>CAS</td><td> (8; 96%) </td><td>(3; 97%)</td><td> (7; 97%)</td>
+							</tr>
+							<tr>
+							<td>	WS</td><td> (11; 96%)</td><td> (3; 97%) </td><td>(10; 98%)</td>
+							</tr>
+							<tr>
+								<td>E-Shop</td><td> (11; 95%)</td><td> (3; 97%)</td><td> (9; 98%)</td>
+							</tr>
+							<tr>
+								<td>Drupal</td><td> (25; 97%)</td><td> (8; 99%) </td><td>(16; 98%)</td>
+							</tr>
+							<tr>
+								<td>SmartHome</td><td> (25; 96%)</td><td> (7; 99%)</td><td> (16; 98%)</td>
+							</tr>
+
+							<tr>
+								<td rowspan="7">3-Objectives</td>
+								<td>James</td>
+								<td>(6; 98%; 98%) </td>
+								<td>(1; 98%; 98%) </td>
+								<td>(3; 98%; 98%)</td>
+							</tr>
+							<tr>
+
+								<td>CAS</td><td> (8; 96%; 96%)</td><td> (3; 98%; 98%)</td><td> (5; 98%; 99%)</td>
+</tr>
+<tr>
+							<td>	WS</td><td> (12; 98%; 98%) </td><td>(3; 97%; 97%)</td><td> (8; 98%; 99%)</td>
+							</tr>
+							<tr>
+							<td>E-Shop</td><td> (12; 98%; 98%)</td><td> (3; 99%; 99%) </td><td>(5; 97%; 98%)</td>
+							</tr>
+							<tr>
+							<td>	Drupal</td><td> (27; 97%; 97%) </td><td>(10; 99%; 99%) </td><td>(18; 98%; 99%)</td>
+							</tr>
+							<tr>
+								<td>SmartHome</td><td> (28; 96%; 97%)</td><td> (8; 99%; 99%)</td><td> (18; 99%; 99%)</td>
+
+							</tr>
+
+
+
+						</tbody>
+					</table>
+					</div>
+
+					<p class="text-justify">Click <a href="reference-points/rps.zip" target="_blank">here</a> for downloading all reference points.</p>
+
+					
+					<h3 id="qi" class="purple">Quality Indicators</h3>
+
+
+
+					
+
+			<p>The analysis was conducted by using sets and indicators from the multi-objective optimization area [7] that are relevant to the scope of this work: </p>
+				
+				<ul>
+				<li> Hypervolume in conjunction with R-Metric (R-HV); </li>
+				<li> Euclidean Distance (ED); </li>
+				<li> Average number of solutions and percentage of solutions in the ROI.</li>
+				</ul>
+
+				<p>To obtain such indicators, three sets of solutions were generated.</p>
+<ul>
+	<li> PF<sub>approx</sub>: set of non-dominated solutions obtained by one algorithm execution; </li>
+	
+	<li> PF<sub>known</sub>: set of non-dominated solutions of an algorithm obtained by the union of all the PF<sub>approx</sub> from all the executions, removing the non-dominated and repeated solutions;</li>
+	
+	<li> PF<sub>true</sub>: represents the Optimal Pareto Front to the problem. In our case this set is unknown. This set was formed by all sets PF<sub>known</sub> obtained from different algorithms by removing dominated solutions and repeated ones. The set PF<sub>true</sub> is, in fact, an approximation to the real front.</li>
+
+</ul>
+
+					<h3 id="raw-results" class="purple">Raw Files</h3>
+
+					You can <a href="raw-results.zip">click here</a> for downloading a zip file with the raw results found by the algorithms. 
+					Also, you can use the following tools for evaluating them.
+					
+					<ul>
+						<li><a href="tools/analysis-master.zip">Analysis</a></li>
+						<li><a href="tools/r-nsga-ii-master.zip">R-NSGA-II</a></li>
+					</ul>
+
+					<h3 id="references" class="purple">References</h3>
+
+					<ul style="list-style-type: none; ">
+					<li><b>[1] Automated analysis of feature models 20 years later: A literature review</b><br>
+					Benavides, D. and Segura, S. and Ruiz-Cort\'es, A.
+					Elsevier. p. 615--636. 2010 </li>
+
+					<li><b>[2] Reusing State Machines for Automatic Test Generation in Product Lines</b><br>
+					Weißleder, Stephan and Sokenou, Dehla and Schlingloff, Holger
+					Proceedings of the 1st Workshop on Model-based Testing in Practice (MoTiP'08) 2008</li>
+
+					<li><b>[3] Software Product Line Engineering with Feature Models</b><br>
+					D. Beuche and M. Dalgarno p. 5--8. 2012 </li>
+
+					<li><b>[4] Automated Test Data Generation on the Analyses of Feature Models: A Metamorphic Testing Approach</b><br>
+					Segura, S. and Hierons, R. M. and Benavides, D. and Ruiz-Cort\'es, A.
+					Proceedings of the 3rd International Conference on Software Testing, Verification and Validation (ICST'10) p. 35--44. 2010</li>
+
+					<li><b>[5] Multi-objective test case prioritization in highly configurable systems: A case study</b><br>
+						J.A. Parejo and A.B. Sánchez and S. Segura and A. Ruiz-Cortés and R. Lopez-Herrejon and A. Egyed
+						Elsevier. p. 287--310. 2016 </li>
+
+					<li><b>[6] Multi-objective Test Generation for Software Product Lines</b><br>
+					Henard, C. and Papadakis, M. and Perrouin, G. and Klein, J. and Le Traon, Y.
+					Proceedings of the 17th International Software Product Line Conference (SPLC'13) p. 62--71. 2013 </li>
+
+
+					<li><b>[7] Evolutionary Algorithms for Multiobjective Optimization: Methods and Applications </b><br>Zitzler, E. Citeseer. 1999</li>
+
+				</ul>
+
+					<!--
+					<h3 id="acknowledgement" class="purple">Agradecimentos</h3>
+						<br/>
+						<a href="http://www.inf.ufpr.br/gres">
+							<img src="../../img/logo-gres.png" alt="Logotipo do GrES" width="300" class="img-responsive"/>
+						</a>
+					-->
+				</div>
+				<div class="col-md-3" >
+					<div id="table-of-contents" class="affix">
+						<nav id="nav">
+							<ul class="nav">
+								<li class="active"><a href="#title" >Title</a></li>
+								<li><a href="#abstract">Abstract</a></li>
+								<li><a href="#instances">Instances</a></li>
+								<li><a href="#rps">Reference Points</a></li>
+								<li><a href="#raw-results">Raw Results</a></li>
+								<li><a href="#references">References</a></li>
+				    		</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script>
+			$(function(){
+
+			$("#nav ul li a[href^='#']").on('click', function(e) {
+			   // prevent default anchor click behavior
+			   e.preventDefault();
+
+			   // animate
+			   $('html, body').animate({
+				  scrollTop: $(this.hash).offset().top
+				 }, 300, function(){
+					 // when done, add hash to url
+				   // (default click behaviour)
+				   window.location.hash = this.hash;
+				 });
+
+			});
+			});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,269 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #242121;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    overflow-y: scroll;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 300;
+    line-height: 1.1;
+}
+
+h1 {
+    font-size: 2.4em
+}
+
+h2 {
+    font-size: 2em
+}
+
+h3 {
+    font-size: 1.6em
+}
+
+h4 {
+    font-size: 1.36em
+}
+
+h5 {
+    font-size: 1.2em
+}
+
+h6 {
+    font-size: 1.1em
+}
+
+@media screen and (min-width: 768px){
+    aside {
+        width: 25%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        overflow-y: auto;
+    }
+}
+
+aside {
+    background-color: #e9ebee;
+    border-right: 1px solid;
+    border-color: #e5e6e9 #dfe0e4 #d0d1d5;
+}
+
+aside .name {
+    padding: 20px 0px;
+    line-height: 1.2em;
+    font-size: 1.6em;
+    padding-bottom: 5px;
+}
+
+aside{
+    color: black;
+}
+
+aside div{
+    padding: 0px 30px;
+}
+
+aside, main nav {
+    text-align: center;
+}
+
+aside nav ul li {
+    text-align: left;
+    padding-top: 2px;
+}
+
+.nav > li > a {
+    padding: 10px 15px;
+}
+
+aside div{
+    max-width: 220px;
+    float: right;
+}
+
+aside div img {
+    border-radius: 8%;
+    max-width: 140px;
+    margin-top: 40px;
+	box-shadow: 0 3px 6px rgba(0,0,0,.2);
+}
+
+aside nav{
+    margin-top: 20px;
+}
+
+aside nav ul a:hover, .active a{
+    /*background-color: rgba(41, 121, 255,0.8) !important;*/
+    background-color: #337ab7 !important;
+    color: white !important;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+box-shadow: 0 3px 6px rgba(0,0,0,.2);
+}
+
+@media screen and (min-width: 768px){
+    main {
+        width: 75%;
+        position: absolute;
+        top: 0;
+        left: 25%;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+}
+
+
+
+main article {
+    margin: 0 8% 2%;
+}
+
+main article div{
+    line-height: 180%;
+    text-align: justify;
+   text-justify: inter-word;
+}
+
+main article header h1{
+    margin-top: 38px;
+    margin-bottom: 5px;
+}
+
+main article header p {
+    color: #999;
+    font-size: .82em;
+}
+
+a{
+  color: #337ab7;
+}
+
+.publications ul li{
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
+
+.td-limit {
+    max-width: 70px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.navbar-default{
+    background-color: #337ab7;
+    border: 1px solid #337ab7;
+}
+
+@media screen and (max-width: 768px ){
+  body {
+    padding-top: 40px;
+  }
+  .navbar{
+      display: block !important;
+  }
+
+
+}
+.navbar-default .navbar-brand{
+  color: white;
+}
+
+#bs-example-navbar-collapse-1{
+  background-color: white;
+}
+
+.navbar-default .navbar-toggle .icon-bar{
+  background-color: white;
+}
+
+.space{
+    margin-top: 25px
+}
+
+  .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover{
+    background-color: #2d6da3;
+  }
+
+ .spin{
+     width: 2px;
+ }
+
+.publication-list h4{
+    margin-top: 30px;
+}
+
+.publication-list-bibtex{
+    display: none;
+}
+
+.publication-list ul li{
+    margin-bottom: 12px;
+    list-style-type: decimal;
+}
+
+.publication-list-sort[data-by=type]{
+    display: none;
+}
+
+#publication-list-year{
+    display: none;
+}
+
+.MathJax_CHTML{
+    text-align: center;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+}
+
+td.sem-aula,
+table tr.sem-aula td:nth-child(2),
+table tr.sem-aula td:nth-child(3),
+table tr.sem-aula td:nth-child(4),
+table tr.sem-aula td:nth-child(5){
+    color: #7F0000;
+    background-color: #FFE4E4 !important;
+}
+
+td.avaliacao,
+table tr.avaliacao td:nth-child(2),
+table tr.avaliacao td:nth-child(3),
+table tr.avaliacao td:nth-child(4),
+table tr.avaliacao td:nth-child(5){
+    color: #007F00;
+    background-color: #E4FAE4 !important;
+}
+
+.black{
+    color: black;
+}
+
+.mb-5{
+    margin-bottom: 5px;
+}
+
+.mb-25{
+    margin-bottom: 25px;
+}
+
+.mt-25{
+    margin-top: 25px;
+}
+
+/*CSS para impressão*/
+@media print {
+    nav, footer, video, audio, object, embed, aside {
+        display:none !important;
+    }
+    .text-primary {
+        color: #337ab7;
+    }
+}
