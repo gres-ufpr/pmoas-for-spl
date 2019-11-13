@@ -1,3 +1,5 @@
+<img src="https://raw.githubusercontent.com/gres-ufpr/supporting-pages/master/icon.png" width="64px"/>
+
 # Supporting Pages
 
 Supporting pages for the papers published by the group
