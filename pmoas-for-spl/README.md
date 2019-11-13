@@ -13,7 +13,7 @@ Evolutionary Multi-Objective Algorithms (EMOAs) have been applied to derive prod
 
 **Keywords**
 
-Software Product Line Testing \sep Search-Based Software Engineering \sep Preference-Based Algorithms
+Software product line testing, Search-Based software engineering, Preference-Based algorithms
 
 ## URL
 https://www.sciencedirect.com/science/article/pii/S016412121930038X
