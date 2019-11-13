@@ -14,5 +14,5 @@ Feel free to create <a href="https://github.com/gres-ufpr/supporting-pages//issu
 
 ## 
 
-<img src="https://raw.githubusercontent.com/gres-ufpr/gres-ufpr.github.io/master/images/logo-en-1.png" width="450px"/>
+<img src="https://raw.githubusercontent.com/gres-ufpr/gres-ufpr.github.io/master/images/logo-en-1.png" width="400px"/>
 
