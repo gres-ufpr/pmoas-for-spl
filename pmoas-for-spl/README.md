@@ -1,6 +1,6 @@
 # Supporting Page for 
 
-## Preference Based Multi-Objective Algorithms Applied to the Variability Testing of Software Product Lines
+### Preference Based Multi-Objective Algorithms Applied to the Variability Testing of Software Product Lines
 
 Helson Luiz Jakubovski Filho, Thiago Nascimento Ferreira, Silvia Regina Vergilio
 
