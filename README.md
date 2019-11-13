@@ -6,7 +6,7 @@ Supporting pages for the papers published by the group
 
 ## Papers
 
-- Jakubovski Filho, H., Ferreira, T., & Vergilio, S. (2019). **Preference based multi-objective algorithms applied to the variability testing of software product lines**. Journal Of Systems And Software, 151, 194-209. &nbsp;&nbsp;&nbsp;&nbsp;Supporting Page: https://gres-ufpr.github.io/supporting-pages/pmoas-for-spl/
+- Jakubovski Filho, H., Ferreira, T., & Vergilio, S. (2019). **Preference based multi-objective algorithms applied to the variability testing of software product lines**. Journal Of Systems And Software, 151, 194-209. <br/>Supporting Page: https://gres-ufpr.github.io/supporting-pages/pmoas-for-spl/
 
 ## Questions or Suggestions
 
