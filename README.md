@@ -1,6 +1,6 @@
 # Supporting Pages
 
-The supporting pages for the papers published by the group
+Supporting pages for the papers published by the group
 
 ## Papers
 
